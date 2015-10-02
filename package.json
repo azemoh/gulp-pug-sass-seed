@@ -1,0 +1,23 @@
+{
+  "name": "gulp-jade-sass-starter",
+  "version": "0.0.0",
+  "description": "A Jade and Sass starter project using gulp for task automation.",
+  "main": "gulpfile.js",
+  "author": {
+    "name": "Joshua Azemoh",
+    "email": "buzzme46@gmail.com",
+    "url": "https://github.com/azemoh"
+  },
+  "scripts": {
+    "start": "gulp",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.9.3",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.0.1",
+    "gulp-data": "^1.2.0",
+    "gulp-jade": "^1.0.1",
+    "gulp-sass": "^2.0.4"
+  }
+}

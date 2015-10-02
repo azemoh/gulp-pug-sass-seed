@@ -1,0 +1,21 @@
+/*	FONTS
+------------------------*/
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,700);
+
+/*	TYPOGRAPHY
+–––––––––––––––––––––––––––*/
+body {
+	font-family: 'Raleway', Arial, sans-serif, ;
+	color: #555;
+	font-size: 100%;
+	line-height: 1.5;
+	background-color: #f2f2f2;
+	margin: 0;
+}
+
+/* ------ Normalize ----- */
+*,
+*:after,
+*:before {
+	box-sizing: border-box;
+}
