@@ -4,7 +4,7 @@
 var gulp = require('gulp'),
 	path = require('path'),
 	data = require('gulp-data'),
-	jade = require('gulp-jade'),
+	pug = require('gulp-pug'),
 	prefix = require('gulp-autoprefixer'),
 	sass = require('gulp-sass'),
 	browserSync = require('browser-sync');
@@ -19,29 +19,29 @@ var settings = {
 };
 
 /**
- * Compile .jade files and pass in data from json file
- * matching file name. index.jade - index.jade.json
+ * Compile .pug files and pass in data from json file
+ * matching file name. index.pug - index.pug.json
  */
-gulp.task('jade', function () {
-	return gulp.src('*.jade')
+gulp.task('pug', function () {
+	return gulp.src('*.pug')
 		.pipe(data(function (file) {
 			return require('./_data/' + path.basename(file.path) + '.json');
 		}))
-		.pipe(jade())
+		.pipe(pug())
 		.pipe(gulp.dest(settings.publicDir));
 });
 
 /**
- * Recompile .jade files and live reload the browser
+ * Recompile .pug files and live reload the browser
  */
-gulp.task('jade-rebuild', ['jade'], function () {
+gulp.task('pug-rebuild', ['pug'], function () {
 	browserSync.reload();
 });
 
 /**
- * Wait for jade and sass tasks, then launch the browser-sync Server
+ * Wait for pug and sass tasks, then launch the browser-sync Server
  */
-gulp.task('browser-sync', ['sass', 'jade'], function () {
+gulp.task('browser-sync', ['sass', 'pug'], function () {
 	browserSync({
 		server: {
 			baseDir: settings.publicDir
@@ -68,11 +68,11 @@ gulp.task('sass', function () {
 
 /**
  * Watch scss files for changes & recompile
- * Watch .jade files run jade-rebuild then reload BrowserSync
+ * Watch .pug files run pug-rebuild then reload BrowserSync
  */
 gulp.task('watch', function () {
 	gulp.watch(settings.sassDir + '/**', ['sass']);
-	gulp.watch(['*.jade', '**/*.jade'], ['jade-rebuild']);
+	gulp.watch(['*.pug', '**/*.pug'], ['pug-rebuild']);
 });
 
 /**

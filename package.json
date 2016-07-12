@@ -1,7 +1,7 @@
 {
-  "name": "gulp-jade-sass-starter",
-  "version": "0.1.0",
-  "description": "A Jade and Sass starter project using gulp for task automation.",
+  "name": "gulp-pug-sass-starter",
+  "version": "0.2.0",
+  "description": "A Pug and Sass starter project using gulp for task automation.",
   "main": "gulpfile.js",
   "author": {
     "name": "Joshua Azemoh",
@@ -17,16 +17,17 @@
     "gulp": "^3.9.0",
     "gulp-autoprefixer": "^3.0.1",
     "gulp-data": "^1.2.0",
-    "gulp-jade": "^1.0.1",
+    "gulp-pug": "^3.0.3",
     "gulp-sass": "^2.0.4"
   },
-	"repository": {
+  "repository": {
     "type": "git",
-    "url": "https://github.com/azemoh/gulp-jade-sass-starter.git"
+    "url": "https://github.com/azemoh/gulp-pug-sass-starter.git"
   },
   "keywords": [
     "jade",
     "gulp",
+    "pug",
     "sass",
     "browsersync"
   ]
