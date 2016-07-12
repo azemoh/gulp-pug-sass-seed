@@ -2,6 +2,9 @@
 
 This is a Pug and Sass starter project using gulp for task automation.
 
+### Note
+If you still need Jade support use [this](https://github.com/azemoh/gulp-jade-sass-starter) project instead.
+
 This project uses...
 
 1. [browser-sync](https://github.com/browsersync/browser-sync) to launch a local server and do live reloads as sass and pug files changes
