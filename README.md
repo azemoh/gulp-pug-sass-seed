@@ -1,5 +1,7 @@
 ## Pug-Sass Starter project.
 
+[![Build Status][travis-image]][travis-url]
+
 This is a Pug and Sass starter project using gulp for task automation.
 
 ### Note
@@ -17,3 +19,5 @@ This project uses...
 - Execute `npm install` from this directory to install dev dependencies.
 - Execute `gulp` to run all tasks, launch the browser sync local server and watch for changes.
 
+[travis-url]: https://travis-ci.org/azemoh/gulp-pug-sass-seed
+[travis-image]: https://travis-ci.org/azemoh/gulp-pug-sass-seed.svg
