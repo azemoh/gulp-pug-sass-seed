@@ -29,6 +29,9 @@ gulp.task('pug', function () {
       return require(paths.data + path.basename(file.path) + '.json');
     }))
     .pipe(pug())
+    .on('error', (err) => {
+      console.log(err.message);
+    })
     .pipe(gulp.dest(paths.public));
 });
 
